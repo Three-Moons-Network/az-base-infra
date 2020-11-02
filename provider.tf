@@ -1,4 +1,4 @@
-  provider "azurerm" {
+provider "azurerm" {
   features {}
   version = "~>2.5.0"
 }
@@ -17,4 +17,13 @@ provider "azuread" {
 
 provider "local" {
   version = "~>1.4"
+}
+
+terraform {
+  backend "azurerm" {
+    resource_group_name   = "mgt-rg"
+    storage_account_name  = "tfstatesasoops"
+    container_name        = "tfstatestorage"
+    key                   = "standup-base-infra.tfstate"
+  }
 }

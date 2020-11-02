@@ -1,13 +1,13 @@
 resource "azurerm_resource_group" "tf-storage" {
-  name      = "mgt-rg"
-  location  = var.location
+  name     = "mgt-rg"
+  location = var.location
   tags = merge({
     Name = "aks-mgt-rg" },
-    local.common_tags)
+  local.common_tags)
 }
 
 resource "azurerm_resource_group" "aks-rg" {
-  name     = "${var.application}-${var.environment}-rg"
+  name     = "aks-rg"
   location = var.location
   tags = merge({
     Name = "aks-rg" },
