@@ -1,0 +1,5 @@
+export TF_VAR_subscription_id=""
+export TF_VAR_tenant_id=""
+export TF_VAR_repo=""
+export TF_VAR_admin_username=""
+export TF_VAR_db_password=""

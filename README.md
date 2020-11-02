@@ -6,4 +6,4 @@ storage
 networking
 variables
 
-stand up the base-infra with terraform plan 
+stand up the base-infra with terraform plan. Use common.env file to export secrets to cli.
