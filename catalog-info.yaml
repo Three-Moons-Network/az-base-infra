@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: az-base-infra
+  description: >
+    First stage of an Azure environment via Terraform/Terragrunt — backend storage, resource group, and network.
+  annotations:
+    github.com/project-slug: Three-Moons-Network/az-base-infra
+  tags:
+    - azure
+    - terraform
+    - terragrunt
+spec:
+  type: other
+  lifecycle: experimental
+  owner: user:linuxlsr
